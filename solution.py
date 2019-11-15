@@ -1,3 +1,6 @@
+# File for representing different numerical methods for approximating solutions of differential equation(f'(x) = function(x, y)) as classes.
+# @rufusnufus, October 2019
+
 import numpy as np
 import math
 import matplotlib
