@@ -31,6 +31,7 @@ class Solution(object):
         self.y = np.zeros([self.n + 1])
         self.h = (self.x_f - self.x_0) / (self.n)
         self.y[0] = self.y_0
+
         self.solve()
         self.ax.set_data(self.x, self.y)
 
@@ -51,7 +52,7 @@ class Exact(Solution):
     def solve(self):
         const = self.get_const()
         for i in range(1, self.n + 1):
-            self.y[i] = (-2) * self.x[i] + 1 + 2 * math.exp(self.x[i] - 1)
+            self.y[i] = (-2) * self.x[i] + 1 + const * math.exp(self.x[i])
 
     def graph(self, axes):
         self.ax, = axes.plot(self.x, self.y, 'o-', label='Exact', markersize =3)
