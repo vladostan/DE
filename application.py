@@ -1,3 +1,6 @@
+# GUI Application showing different numerical methods for approximating solutions of differential equation(f'(x) = sol.function(x, y)).
+# @rufusnufus, October 2019
+
 import solution as sol
 from matplotlib import pyplot as plt
 import matplotlib.widgets as mwidgets
