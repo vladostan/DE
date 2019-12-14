@@ -197,7 +197,8 @@ class Application(object):
         plt.show()
 
 #--------------------------------RUNNING APPLICATION---------------------------------#
-
+# Love you =*
+        
 if __name__ == "__main__":
     a = sol.Exact(sol.function, 1, 1, 7, 40)
     b = sol.Euler(sol.function, 1, 1, 7, 40)
